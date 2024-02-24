@@ -1,0 +1,13 @@
+/* li[class]{
+    color: blueviolet;
+    font-size: xx-large;
+} */
+/* 
+li[class="a"]{
+    color: yellowgreen;
+    font-size: xx-large;
+} */
+li[class~="a"]{
+    color: blueviolet;
+    font-size: x-large;
+}

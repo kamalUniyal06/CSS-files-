@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 1px;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer  footer footer'
+            ;
+        }
+        @media screen and (min-width: 300px) and (max-width: 600px)
+        {
+             .container{
+                background-color: red;
+             }
+        }
+        @media screen and (min-width: 100px) and (max-width: 750px)
+        {
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer  footer footer'
+            ;
+           
+        }
+        
+        }
+        @media screen and (min-width: 100px) and (max-width: 380px)
+        {
+           span{
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column-reverse;
+            padding: 0px;
+            margin: 0px;
+           }
+        }
+        
+        .item{
+            border: 2px solid black;
+            padding: 12px;
+
+        }
+        span{
+            padding: 10px;
+        }
+        #navbar{
+            grid-area: navbar;
+            text-align: center;
+        }
+        #section{
+            grid-area: section;
+            text-align: center;
+        }
+        #aside{
+            grid-area: aside;
+            text-align: center;
+        }
+        #footer{
+            grid-area: footer;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <span>Home</span>  <span>Services</span>  <span>About Us</span>  <span>Contact Us</span>
+        </div>
+        <div id="section" class="item">
+            <section>
+                <h1>About US</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque ullam possimus, voluptates a officiis iste esse enim voluptatibus nam, deserunt mollitia architecto ducimus, dicta nesciunt? Iure nulla sit harum commodi nemo ipsam ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate nobis veritatis, eligendi sit officia necessitatibus magni. Ab fugiat animi nihil adipisci soluta accusamus veritatis, et, laboriosam molestiae optio vel aspernatur debitis necessitatibus eveniet?</p>
+            </section>
+        </div>
+        <div id="aside" class="item">
+            <h4>More About us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nihil dolore, et, tenetur laborum repellat placeat at voluptas natus inventore eaque veritatis facilis, explicabo provident. Ullam provident sequi, iste eaque harum odio aliquam!</p>
+        </div>
+        <div id="footer" class="item">
+            Copyright This is developed by Kamal uniyal in 2022
+        </div>
+    </div>
+</body>
+</html>

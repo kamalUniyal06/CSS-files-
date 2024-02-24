@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .box{
+            height:fit-content;
+            width:fit-content;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+        #box4{
+            align-self: center;
+        }
+        #kamal{
+            border: none;
+        }
+       @media screen and (min-width:480px){
+        #kamal{
+            display:none;
+        }
+
+       }
+       @media screen and (max-width:479px){
+       
+        .box{
+            display:none;
+        }
+
+       }
+    
+    </style>
+</head>
+<body>
+    <header id="deepu">
+    <div class="box" id="box1">home</div>
+    <div class="box" id="box2">serve</div>
+    <div class="box" id="box3">shop</div>
+    <div id="box4"><input type="text" placeholder="search"></div>
+    </header>
+    <header id="kamal">
+        <div class="box1" id="box1">home</div>
+        <div class="box1" id="box2">serve</div>
+        <div class="box1" id="box3">shop</div>
+      
+        </header>
+</body>
+</html>

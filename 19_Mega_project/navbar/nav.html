@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: fixed;
+            height: 3444px;
+        }
+        .container{
+            display: flex;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            height: 60px;
+            background-color: #000000;
+            /* position: sticky; */
+         
+        }
+        
+        .content{
+            display: flex;
+            justify-content: center;
+            width: auto;
+            margin: auto;
+            /* position: relative; */
+            bottom: 50px;
+        }
+        .content a{
+            text-decoration: none;
+            list-style-type: none;
+            color: pink;
+
+        }
+        .content a:hover{
+                  background-color: green;       
+            
+        }
+
+        .content li{
+            list-style-type: none;
+            margin: 10px;
+
+        }
+        .search {
+    padding: 0px;
+    /* position: relative; */
+    /* width: fit-content; */
+    flex-wrap: wrap;
+    bottom: 80px;
+    display: flex;
+    left: 1001px;
+    margin: 0px;
+}
+input{
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+}
+.image{
+    width: fit-content;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="image">
+            <img src="/apple_logo.png" width="100px" alt="apple">
+        </div>
+        <ul class="content">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About US</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+        </div>
+    </div>
+</body>
+</html>

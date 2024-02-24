@@ -1,0 +1,23 @@
+p{
+    text-align: center;
+    background-image: url(image_02.jpg);
+    height: 1000px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    /* background-attachment: fixed; */
+    /* background-attachment: local; */
+    /* background-attachment: scroll; */
+    background-position: middle;
+}
+/* .background{
+    background-image: url(image_02.jpg);
+    height: 1000;
+    width: 1000;
+} */
+h1{
+    text-align: center;
+    text-shadow: rgba(255, 0, 0, 0.585);
+    text-size-adjust: small;
+   
+}

@@ -1,0 +1,39 @@
+/* .special{
+    color: blueviolet;
+    font-weight: bold;
+} */
+
+/* em.special,li.special{
+    color: red;
+    font-size: xx-large;
+} */
+
+li em{
+    color: rebeccapurple;
+    font-size: xx-large;
+}
+/* p em{
+    color: red;
+    font: bold;
+} */
+h1+p{
+    color: blueviolet;
+    font-size: xx-large;
+}
+/* section+article{
+    color: navy;
+    font-size: xx-large;
+} */
+
+/* pesudoclass class selector Hover */
+a:hover{
+    color: saddlebrown;
+    text-shadow: 20px;
+    text-decoration: wavy;
+}
+    article em.special{
+    color: white;
+    background-color: black;
+    padding: 5px;
+
+}

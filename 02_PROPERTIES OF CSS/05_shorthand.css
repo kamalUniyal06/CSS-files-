@@ -1,0 +1,13 @@
+/* h1{
+    background: url(image_02.jpg) no-repeat right top;
+} */
+/* h1{
+    font: italic bold 3em/2.1 Arial, sans-serif;
+} */
+/* h1{
+    border: 1px solid #000;
+    border-style: groove;
+} */
+h1{
+    margin: 10px 5px 10px 5px;
+}

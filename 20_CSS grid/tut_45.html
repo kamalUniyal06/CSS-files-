@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+              'navbar navbar navbar navbar'
+              'section section section aside'
+              'footer footer footer footer'
+            
+            ;
+        }
+       @media only screen and (min-width: 301px) and (max-width: 400px) {
+        body {
+          background-color: grey;
+        }
+          .container{
+            grid-template-areas: 
+              'navbar navbar navbar navbar'
+              'section section section section'
+              'aside aside aside aside'
+              'footer footer footer footer'
+            
+            ;
+            }
+            span{
+                display: block;
+                margin: 2px;
+            }
+      }
+      @media only screen and (min-width: 401px) and (max-width: 500px) {
+        body {
+          background-color: red;
+
+        }
+      }
+       @media only screen and (min-width:601px)
+           {
+            body{
+                background-color: purple;
+
+            } 
+            }   
+      @media only screen and (min-width: 501px) and (max-width: 600px) {
+        body {
+          background-color: yellow;
+             }
+             .container{
+            grid-template-areas: 
+              'navbar navbar navbar navbar'
+              'section section section section'
+              'aside aside aside aside'
+              'footer footer footer footer'
+            
+            ;
+
+        }
+      }
+      
+      @media only screen and (max-width:299px) {
+        body {
+          background-color: pink;
+
+        }
+        .container{
+            grid-template-areas: 
+              'navbar navbar navbar navbar'
+              'section section section section'
+              'aside aside aside aside'
+              'footer footer footer footer'
+            
+            ;
+            }
+            span{
+                display: block;
+                margin: 2px;
+            }
+      }
+      .bdr{
+        border: 2px solid black;
+        padding: 23px;
+        background-color: white;
+      }
+      nav{
+               grid-area: navbar;
+               text-align: center;
+          }
+       
+          section{
+            grid-area: section;
+          }
+          aside{
+            grid-area: aside;
+          }
+          footer{
+            grid-area: footer;
+            text-align: center;
+          }
+          span{
+            padding: 12px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bdr">
+          <span>Home</span><span>About us</span><span>Contact us</span><span>Sign up</span>    
+    </nav>
+      <section class="bdr">
+        <h2>Learn CSS with Kamal</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus impedit dolorem labore! Vero magni, molestiae minima obcaecati magnam error id ea quasi quis molestias repellendus optio aliquam saepe ipsam, aut cupiditate, veritatis suscipit iure reiciendis ex exercitationem! Possimus in ratione, ducimus voluptates aut cumque quae ea placeat rerum sequi nemo quaerat, est consectetur voluptatum, quisquam alias doloribus dolor distinctio praesentium repellendus obcaecati fuga quo. Perferendis facilis fuga nostrum natus maiores provident dolores et repudiandae saepe iusto adipisci cum fugiat nemo eum minima non, architecto atque optio dolorem vitae commodi unde nobis veritatis. Delectus laudantium, autem quod optio accusamus voluptas repudiandae exercitationem voluptatem corrupti, mollitia esse illo harum voluptates dolorem reiciendis nisi placeat. Cum, accusantium! Iusto tempore, officia in quasi animi fuga est tenetur repudiandae culpa, deserunt accusantium ipsa. Obcaecati natus omnis aliquid impedit cumque nisi. Ducimus veniam dolor voluptatibus a libero magnam quis debitis fugit ipsa placeat maiores illo quia id obcaecati, similique quae quas unde at. Laboriosam pariatur qui earum similique adipisci officia, praesentium, impedit quaerat labore vel quas debitis commodi exercitationem dolores fugit. A neque id vero, exercitationem totam quia rerum blanditiis cum ipsum velit modi expedita soluta voluptatem distinctio voluptate voluptatum, debitis officiis vel! Unde vero debitis aut consequuntur obcaecati illum esse. Commodi nobis minima, doloremque obcaecati unde reprehenderit quis eius debitis incidunt sunt praesentium exercitationem autem, vel expedita suscipit doloribus sequi et sint magni modi? Voluptates asperiores tempore obcaecati corrupti iusto quod tenetur exercitationem nostrum natus veritatis aspernatur ipsum magnam pariatur, quibusdam voluptas repellat, explicabo cupiditate praesentium necessitatibus assumenda, dolorem provident? Fugit aut id dolor eius, vel sapiente obcaecati similique. Atque, deleniti! Aut nam pariatur animi molestias! Quibusdam nemo laudantium suscipit et, beatae corporis laboriosam dignissimos. Saepe quidem asperiores, expedita numquam similique minus repellendus itaque ducimus aspernatur molestias, officiis repellat libero reiciendis ullam quod illum.</p>
+      </section>
+      <aside class="bdr">
+        <h1 >More about us</h1>
+      </aside>
+    </div>
+    <footer class="bdr">
+        Copyright contact us kamal uniyal 2022
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: cursive;
+            height: 1000px;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .banner video{
+            position: absolute;
+            top:  0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;            
+        }
+        .banner .content{
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;            
+        }
+        .banner .content h1{
+            margin: 0;
+            padding: 0;
+            font-size: 4.5em;
+            text-transform: uppercase;
+            color: #fff;            
+        }
+        .banner .content p{
+            font-size: 1.5em;
+            color: #fff;            
+        }  
+    </style>
+</head>
+<body>
+    <div class="banner">
+         <video autoplay muted loop
+         src="/production ID_3752531.mp4" width="100%"></video>
+        <div class="content">
+             <h1>KAMAL UNIYAL</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est quidem amet voluptas possimus quam suscipit ex, qui provident voluptatibus molestiae iste ipsa eum nostrum veritatis a minus voluptates facilis libero quas iusto. Tempore voluptatem saepe cupiditate inventore at, quibusdam illum perspiciatis esse quidem qui provident consectetur ratione asperiores itaque pariatur laudantium</p>
+        </div>
+    
+    </div>
+</body>
+</html>

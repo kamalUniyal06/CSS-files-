@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+          .container{
+            size: 10px;
+            background-color: grey;
+          }
+          /* div p{
+            background-color: yellow;
+          } */
+          /*div > p{
+             Those paragraph who are right inside contect with div 
+             background-color: blue;  
+            }*/
+
+
+          /* If p is the next sibilling of div */
+          div+p{
+            background-color: brown;
+          } 
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is a paragraph inside div</p>
+        <ul>
+            <li> <p>This is the paragraph of li </p> </li>
+            <div>
+                <p>This is a paragraph inside ul div</p>
+            </div>
+            <p>This is paragraph</p>
+        </ul>
+    </div>
+
+</body>
+</html>

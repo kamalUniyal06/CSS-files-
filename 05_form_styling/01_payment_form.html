@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        input{
+            width: 1333px;
+            height: 30px;
+            border-color: none;
+        }
+        textarea{
+            width: 1333px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        select{
+            width: 1333px;
+        }
+        button{
+            width: 1333px;
+            height: 30px;
+            background-color: rgba(59, 186, 59, 0.719);
+        }
+        button:hover{
+            color: goldenrod;
+        }
+        #circle{
+            height: 10px;
+            width: 10px;
+        }
+        textarea{
+            border-radius: 10px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <header><h1>Payment Form</h1></header>
+    <hr>
+    <main>
+        <form>
+        <h2>User Information</h2>
+        <b>Name:*</b><br>
+        <input type="text"placeholder="ex-Kamal Uniyal"> <br> <br>
+        <b>Gender</b> 
+        <input type="text"placeholder="Male/Female/Others"> <br> <br>
+        <b>Address:</b>
+        <textarea name="Address" id="101" placeholder="Enter Your Address" rows="8">Address</textarea><br> <br>
+        <b>Email ID:</b>
+        <input type="email" placeholder="ex-Uniyal66@gmail.com"><br> <br>
+        <b>Pincode:</b>
+        <input type="text" placeholder="ex-12345"><br> <br>
+        <h2>Payment Information</h2>
+        Accepted Cards<br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WghiloPxxLe7x-RZha9ib3b-YW7l_eWZFw&usqp=CAU" alt="Cards" width="17%">
+        <br> <br> <b>Card Type:</b> <br>
+        <select name="Cards">
+            <option value="-Select Card Type-">-Select Car Type-</option>
+            <option value="VISA">VISA</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Discover">Discover</option>
+            <option value="American Tourister">American Tourister</option>
+          </select><br> <br>
+        <b>Card Number:*</b> <br>
+        <input type="number" placeholder="1111-2222-3333-4444"> <br> <br>
+        <b>Expiration Date</b> <br>
+        <input type="date" placeholder="dd/mm/yyyy"> <br> <br>
+        <b>CVV</b> <br>
+        <input type="number" placeholder="123"> <br> <br>
+        <button><b>PAY NOW</b></button>
+        <label id="p">
+            <input id="circle" type="radio" value="class Xth" name="class">class xth
+        </label>
+    </form>
+    </main>
+</body>
+</html>

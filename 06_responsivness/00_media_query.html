@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+        /* @media screen and ( min-width: 600px)
+        {
+            body{
+                color: red;
+            }
+        } */
+        /* @media (orientation: portrait)
+        {
+            body{
+                color: purple;
+            }
+        } */
+        /* we can combine these media queries  by and operator*/
+
+        /* @media screen and (max-width:600px) and (orientation: landscape)
+        {
+            body{
+                color: red;
+            }
+        } */
+        /* we can combine these media queries  by or operator*/
+        /* @media screen and (max-width:600px), screen and (orientaion: landscape){
+            body{
+                color: purple;
+            }
+        } */
+        /* we can also use not operator  */
+        @media not all and (orientation: landscape){
+            body{
+                 color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque suscipit itaque assumenda perspiciatis libero incidunt natus, praesentium adipisci modi alias veniam vero vitae ullam nisi fuga dolorem harum vel, at blanditiis! Nihil soluta deserunt quia beatae ipsa, rem eos error consequuntur rerum asperiores similique facilis repudiandae alias molestiae facere illo est corporis maiores cum? Libero sint accusantium numquam a mollitia ipsam. Sit pariatur, repudiandae ipsum esse ducimus fuga dolore eos molestiae quibusdam ipsam nostrum natus, quia vitae eius nesciunt deserunt iste soluta quaerat? Iste dolorem est delectus sed veritatis quis facilis perferendis incidunt quam, explicabo sint eos quo natus.</p>
+</body>
+</html>

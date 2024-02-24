@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic website</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            z-index: -2;
+            
+        }
+        body::before{
+            content: "";
+           background: url(/13_before_and_after_pseudoselector/pexels-albin-berlin-919073.jpg) no-repeat center center/cover;
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           z-index: 1;
+           opacity: 0.3;
+
+        }
+        header{
+            text-align: center;
+        }
+        section::before{
+            content: "HII GUYS";
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            border:solid white;
+            margin: 5px 5px;
+            padding: 5px 5px;
+        }
+        section::after{
+            content: "HII GUYS";
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+            margin: 4px 4px;
+            padding: 5px 5px;
+            justify-content: space-evenly;
+
+        }
+        li{
+            padding: 10px 10px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>FASTrack</h1></header>
+    <section>
+        <ul>
+            <li>HOME</li>
+            <li>SECTION</li>
+            <li>BRANDS</li>
+            <li>LOGIN/SIGNUP</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias eveniet molestiae! Consequuntur sequi vitae provident eveniet enim dolores alias sit. Modi recusandae velit debitis illum iusto nesciunt exercitationem, accusamus repudiandae consectetur illo eos commodi incidunt, cum facilis laudantium voluptas. Totam sunt reprehenderit rem!</p>
+    </section>
+</body>
+</html>

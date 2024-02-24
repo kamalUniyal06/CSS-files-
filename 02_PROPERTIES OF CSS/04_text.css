@@ -1,0 +1,17 @@
+p{
+     color: rgb(255, 0, 0);
+     line-height: 2;      /* Doo lines ke beech mai gap dekhane ke liye */
+     font-weight: 800;
+     text-indent: 100px;   /*initial gaps koo lane ke liye as much you want */
+     word-spacing: 4;
+     text-align: center;
+     text-size-adjust: xx-large;
+     font-size: 30px;
+}
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 3px 3px 2px red,
+    4px 4px 1px yellow;
+    font-size: 100px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAR GARDEN</title>
+    <style>
+        body{
+            background-image: url(/images/pexels-pixabay-301692.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 2%;
+            margin-left: 5px;
+            padding-left: 20px;
+           
+        }
+        .mid{
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 33%;
+            margin: 15px auto;
+            
+        }
+        .right{
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: 3%;
+            padding: 10px;
+           
+        }
+        img{
+            width: 100px;
+            filter: invert(100%);
+        }
+        /* .wine{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding-bottom: 20px;
+        } */
+        .class1{
+            display: inline-block;
+            margin: 2px auto;
+            padding: 18px;
+        }
+       .mid a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .mid a:hover{
+            background-color: rgba(220, 20, 60, 0.443);
+            border: 2px solid rgba(0, 0, 0, 0.426);
+            border-radius: 4px;
+        }
+        .open:hover{
+            text-decoration: underline;
+        }
+        .btn{
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 5px; 
+            background-color: rgba(7, 61, 8, 0.714);
+            color: white;
+        }
+        button:hover{
+            background-color: rgba(220, 20, 60, 0.443);
+            cursor: pointer;
+        }
+        .container{
+            color: white;
+            border: 2px solid white;
+            display: inline-block;
+            margin-top: 120px;
+            margin-left: 220px;            
+            width: 400px;
+            height: 300px;
+            display: inline-block;
+            
+            
+        }
+        .class{
+            margin-top: 30px;
+            margin-left: 90px;
+            width: 50px;
+            font-size: 25px;
+            
+        }
+        input{
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+      
+       
+       
+    </style>
+</head>
+<body>
+    <header>
+    <div class="left">
+        <img src="/images/wine-removebg-preview.png" alt="">
+        <!-- <div class="wine">Wines</div> -->
+    </div>
+    <div class="mid">
+        <div class="class1"> <a class="open" href="#">HOME</a> </div>
+        <div class="class1"> <a href="#">VARITES</a> </div>
+        <div class="class1"> <a href="#">BRANDS</a> </div>
+        <div class="class1"> <a href="#">SIGNUP</a> </div>
+    </div>
+    <div class="right">
+     <button class="btn">CONTACT US</button><button class="btn">EMAIL US</button>
+    </div>
+</header>
+    <main>
+        <div class="container">
+        <div class="class" id="items1"> <form action="/action.php">
+                <input type="text" placeholder="Enter your Name">
+        </form> </div>
+        <div class="class" id="items2"> <form action="/action.php">
+            <input type="number" placeholder="Enter your Age">
+        </form> </div>
+        <div class="class" id="items3"> <form action="/action.php">
+        <input type="text" placeholder="Enter your Locality">
+        </form> </div>
+        
+        <div class="class" id="items5"> <form action="/action.php">
+        <input type="number" placeholder="Enter your Phone Number">
+        
+        </form> </div>
+       
+        
+        </div>
+    </main>
+
+</body>
+</html>
